@@ -1,9 +1,9 @@
-<%= simple_form_for(@event) do |f| %>
+<%= simple_form_for [@user, @event] do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :location %>
-    <%= f.input :time %>
+    <%= f.input :event_time %>
     <%= f.input :deadline %>
     <%= f.input :min_number %>
     <%= f.input :max_number %>

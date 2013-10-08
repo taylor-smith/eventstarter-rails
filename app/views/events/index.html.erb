@@ -20,15 +20,15 @@
     <% @events.each do |event| %>
       <tr>
         <td><%= event.location %></td>
-        <td><%= event.time %></td>
+        <td><%= event.event_time %></td>
         <td><%= event.deadline %></td>
         <td><%= event.min_number %></td>
         <td><%= event.max_number %></td>
         <td><%= event.event_name %></td>
         <td><%= event.event_desc %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', user_event_path(event.user_id, event) %></td>
+        <td><%= link_to 'Edit', edit_user_event_path(event.user_id, event) %></td>
+        <td><%= link_to 'Destroy', user_event_path(event.user_id, event), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Event', new_event_path %>
+<%= link_to 'New Event', new_user_event_path %>
