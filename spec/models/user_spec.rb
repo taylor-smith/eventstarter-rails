@@ -106,7 +106,19 @@ describe User do
       @user = User.create!(@attr)
     end
 
-    it "should have a valid phone number"
+    context "when a user puts a phone number in" do
+      
+      it "is a valid U.S. phone number length"
+    
+    end
+
+    context "when a user does not enter a phone number" do
+
+      it "can be nil"
+
+      it "does not throw an error"
+
+    end
 
   end
 
