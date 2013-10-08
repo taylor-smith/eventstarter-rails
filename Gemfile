@@ -15,6 +15,7 @@ gem 'pg'
 gem 'rolify'
 gem 'simple_form', '>= 3.0.0.rc'
 gem 'zurb-foundation'
+gem 'nested_scaffold'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
