@@ -100,4 +100,14 @@ describe User do
 
   end
 
+  describe "phone numbers" do
+
+    before(:each) do
+      @user = User.create!(@attr)
+    end
+
+    it "should have a valid phone number"
+
+  end
+
 end
