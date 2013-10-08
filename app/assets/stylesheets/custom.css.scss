@@ -1,0 +1,14 @@
+.top-bar {
+	background: #fff;
+	.top-bar-section ul {
+		background: #fff;
+		li {
+			color: #000;
+			background: #fff;
+		}
+		li a:not(.button) {
+			background: #fff;
+			color: #000;
+		}
+	}
+}
