@@ -1,7 +1,7 @@
 class CreateAttendees < ActiveRecord::Migration
   def change
     create_table :attendees do |t|
-      t.integer :event_id
+      t.references :event
       t.string :email
 
       t.timestamps
