@@ -3,6 +3,6 @@
 FactoryGirl.define do
   factory :attendee, :class => 'Attendees' do
     event_id 1
-    email "MyString"
+    email "testemail@testemail.com"
   end
 end
