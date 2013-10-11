@@ -7,7 +7,7 @@ FactoryGirl.define do
     deadline "2013-10-08 10:49:30"
     min_number 1
     max_number 1
-    event_name "MyString"
-    event_desc "MyString"
+    name "MyString"
+    desc "MyString"
   end
 end

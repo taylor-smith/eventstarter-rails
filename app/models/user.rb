@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :events
+  has_many :event_users
+  has_many :events, through: :event_user
   
   rolify
   # Include default devise modules. Others available are:

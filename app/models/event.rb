@@ -1,4 +1,4 @@
 class Event < ActiveRecord::Base
-  belongs_to :user
-  has_many :attendees
+  has_many :event_user
+  has_many :users, through: :event_user
 end
